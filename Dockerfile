@@ -11,4 +11,4 @@ WORKDIR /dash_app/src
 
 EXPOSE 80
 EXPOSE 443
-CMD ["gunicorn", "app:server", "--bind", ":443"]
+CMD ["gunicorn", "app:server", "--bind", ":80"]
