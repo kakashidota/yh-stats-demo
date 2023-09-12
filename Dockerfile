@@ -9,5 +9,6 @@ RUN pip install -r requirements.txt
 
 WORKDIR /dash_app/src
 
+EXPOSE 80
 EXPOSE 443
 CMD ["gunicorn", "app:server", "--bind", ":443"]
